@@ -7,8 +7,8 @@ importable `src/` package with tests.
 ## Dataset
 
 - Source: [Kaggle — telecom-churn](https://www.kaggle.com/datasets/barun2104/telecom-churn) (auto-downloaded with `kagglehub`)
-- Size: 3,333 customer records × 11 columns (10 features + target), no missing values
-- Target: `Churn` — binary (1 = left, ~14% of customers, imbalanced)
+- Size: **3,333** customer records × **11** columns (10 features + target), **no missing values**
+- Target: `Churn` — binary (1 = left, **~14%** of customers, imbalanced)
 - Features: AccountWeeks, ContractRenewal, DataPlan, DataUsage, CustServCalls, DayMins, DayCalls, MonthlyCharge, OverageFee, RoamMins
 
 ## Project Structure
@@ -92,13 +92,13 @@ Held-out test set (80/20 split, `random_state=42`):
 |---------------|----------|-----------|--------|--------|---------|
 | Logistic      | 0.8576   | 0.5263    | 0.2062 | 0.2963 | 0.8091  |
 | Decision Tree | 0.8921   | 0.6404    | 0.5876 | 0.6129 | 0.7657  |
-| Random Forest | 0.9250   | 0.8219    | 0.6186 | 0.7059 | 0.8603  |
+| Random Forest | **0.9250** | 0.8219  | 0.6186 | 0.7059 | 0.8603  |
 | AdaBoost      | 0.8711   | 0.6078    | 0.3196 | 0.4189 | 0.8509  |
 | HistGB        | 0.9220   | 0.7848    | 0.6392 | 0.7045 | 0.8468  |
 | MLP           | 0.9070   | 0.7011    | 0.6289 | 0.6630 | 0.8672  |
-| RF (Tuned)    | 0.9190   | 0.8644    | 0.5258 | 0.6538 | 0.8803  |
-| XGBoost       | 0.9235   | 0.7805    | 0.6598 | 0.7151 | 0.8472  |
+| RF (Tuned)    | 0.9190   | **0.8644** | 0.5258 | 0.6538 | **0.8803** |
+| XGBoost       | 0.9235   | 0.7805    | **0.6598** | **0.7151** | 0.8472 |
 
-- Best F1: **XGBoost** (0.7151)
-- Best ROC-AUC: **RF (Tuned)** (0.8803)
-- Top churn drivers: DayMins, MonthlyCharge, CustServCalls, ContractRenewal
+- Best F1: **XGBoost** — **0.7151**
+- Best ROC-AUC: **RF (Tuned)** — **0.8803**
+- Top churn drivers: **DayMins**, **MonthlyCharge**, **CustServCalls**, **ContractRenewal**
